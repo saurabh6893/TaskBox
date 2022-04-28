@@ -6,7 +6,6 @@ function App() {
     <>
       <Head />
       <Card />
-      <h1>App</h1>
     </>
   )
 }
