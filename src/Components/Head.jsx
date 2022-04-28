@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Head({ n }) {
+function Head() {
   return (
     <div className='head'>
       <p>hello X</p>
