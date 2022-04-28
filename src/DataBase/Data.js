@@ -6,7 +6,7 @@ const Data = [
   },
   {
     id: 2,
-    priority: 1,
+    priority: 5,
     text: 'cing elit. Vel, veritatis. Lorem ipsum dolor sit amet., ipsum dolor sit amet consectetur adipisicing elit. Vel, veritatis. ',
   },
   {
