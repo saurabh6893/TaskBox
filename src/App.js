@@ -3,6 +3,7 @@ import Head from './Components/Head'
 import TaskList from './Components/TaskList'
 import Data from './DataBase/Data'
 import Stats from './Components/Stats'
+import TaskForm from './Components/TaskForm'
 function App() {
   const [task, setTask] = useState(Data)
   const deleteBox = (id) => {
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className='app'>
       <Head />
+      <TaskForm />
       <Stats task={task} />
       <TaskList task={task} deleteBox={deleteBox} />
     </div>

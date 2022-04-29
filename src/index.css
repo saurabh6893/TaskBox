@@ -28,7 +28,7 @@ body {
   margin-bottom: 50px;
 }
 
-.home {
+.box {
   position: relative;
   right: -0.5%;
   width: 99vw;
@@ -80,4 +80,47 @@ body {
 .taskList,
 #Nt {
   color: Black;
+}
+
+.sts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: White;
+  text-transform: capitalize;
+  margin-bottom: 2%;
+}
+
+.tf,
+.inputBox {
+  color: White;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.tf {
+  border: 1px solid white;
+  width: 50vw;
+  height: 25vh;
+}
+.up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+
+.up > * {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.down {
+  width: 20vw;
+  margin: 10px;
 }
