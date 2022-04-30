@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
+
 /* body {
   display: flex;
   justify-content: space-around;
@@ -104,8 +106,10 @@ body {
 
 .tf {
   border: 1px solid white;
-  width: 50vw;
-  height: 25vh;
+  /* width: 50vw;
+  height: 25vh; */
+  padding: 1%;
+  margin: 5%;
 }
 .up {
   display: flex;
@@ -123,4 +127,42 @@ body {
 .down {
   width: 20vw;
   margin: 10px;
+}
+
+.btxx.complete {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5%;
+  font-size: 25px;
+  margin: 2%;
+  padding: 1.5% 10% 1.5% 10%;
+  cursor: pointer;
+}
+
+.tt,
+.down {
+  padding: 1%;
+  cursor: text;
+}
+
+.range {
+  cursor: pointer;
+}
+
+.btxx.incomplete {
+  color: rgb(69, 69, 69);
+  background-color: grey;
+  border: none;
+  border-radius: 0%;
+  font-size: 25px;
+  margin: 2%;
+  padding: 1.5% 10% 1.5% 10%;
+  pointer-events: none;
+}
+
+.msg {
+  color: rgb(218, 0, 0);
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
 }
