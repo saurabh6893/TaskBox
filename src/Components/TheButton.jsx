@@ -11,7 +11,7 @@ function TheButton({ children, version, type, isDisabled }) {
 TheButton.defaultProps = {
   version: 'incomplete',
   type: 'button',
-  isDisabled: false,
+  isDisabled: true,
 }
 
 export default TheButton

@@ -2,13 +2,14 @@ import React from 'react'
 import { useState } from 'react'
 import TheButton from './TheButton'
 
-function TaskForm() {
+function TaskForm({ handleAdd }) {
   // useState Hooks
   const [title, setTitle] = useState('')
   const [range, setRange] = useState('')
   const [details, setDetails] = useState('')
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [msg, setMsg] = useState('')
+  const [version, setVersion] = useState('incomplete')
 
   function verifier() {
     if (title === '') {
@@ -20,6 +21,7 @@ function TaskForm() {
     } else {
       setBtnDisabled(false)
       setMsg(null)
+      setVersion('complete')
     }
   }
   // Events
@@ -28,9 +30,23 @@ function TaskForm() {
     verifier()
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (title.trim().length > 4 && details.trim().length > 10) {
+      const newTask = {
+        title,
+        range,
+        details,
+      }
+      handleAdd(newTask)
+      setTitle('')
+      setRange(1)
+      setDetails('')
+    }
+  }
+
   const handleRange = (e) => {
-    setRange(e.target.value)
-    verifier()
+    setRange(+e.target.value)
   }
 
   const handleDetails = (e) => {
@@ -39,7 +55,7 @@ function TaskForm() {
   }
 
   return (
-    <form className='tf'>
+    <form className='tf' onSubmit={handleSubmit}>
       <h2>Set a new task</h2>
       <div className='inputBox'>
         <div className='up'>
@@ -66,7 +82,12 @@ function TaskForm() {
           className='down'
           value={details}
         />
-        <TheButton type='submit' className='btxx' isDisabled={btnDisabled}>
+        <TheButton
+          type='submit'
+          className='btxx'
+          isDisabled={btnDisabled}
+          version={version}
+        >
           Add
         </TheButton>
       </div>

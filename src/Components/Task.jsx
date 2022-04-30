@@ -6,19 +6,16 @@ function Task({ t, deleteBox }) {
     <Box>
       <div className='task'>
         <div className='hx'>
-          <h3>Task X</h3>
-          <h3>{t.priority}</h3>
+          <h3>{t.title}</h3>
+          <h3>Priority {t.range}</h3>
           <button className='clx' onClick={() => deleteBox(t.id)}>
             <FaTimes />
           </button>
         </div>
-        <p>{t.text}</p>
+        <p>{t.details}</p>
       </div>
     </Box>
   )
 }
 
 export default Task
-
-{
-}

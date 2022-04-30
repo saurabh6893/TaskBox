@@ -34,7 +34,6 @@ body {
   position: relative;
   right: -0.5%;
   width: 99vw;
-  /* background-color: white; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,16 +71,18 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
 .hx > * {
-  margin-right: 10vw;
-  margin-left: 10vw;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 .taskList,
 #Nt {
-  color: Black;
+  color: white;
+  font-size: 20px;
 }
 
 .sts {
