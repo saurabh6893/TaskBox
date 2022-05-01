@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Head from './Components/Head'
 import TaskList from './Components/TaskList'
 import Data from './DataBase/Data'
 import Stats from './Components/Stats'
 import TaskForm from './Components/TaskForm'
+import About from './Components/Pages/About'
+import AboutLink from './Components/AboutLink'
+
 function App() {
   const [task, setTask] = useState(Data)
 
@@ -18,12 +22,27 @@ function App() {
   }
 
   return (
-    <div className='app'>
-      <Head />
-      <TaskForm handleAdd={addTask} />
-      <Stats task={task} />
-      <TaskList task={task} deleteBox={deleteBox} />
-    </div>
+    <Router>
+      <div className='app'>
+        <Routes>
+          <Route
+            exact
+            path='/'
+            element={
+              <>
+                <Head />
+                <TaskForm handleAdd={addTask} />
+                <Stats task={task} />
+                <TaskList task={task} deleteBox={deleteBox} />
+              </>
+            }
+          ></Route>
+          <Route path='/about' element={<About />} />
+        </Routes>
+
+        <AboutLink />
+      </div>
+    </Router>
   )
 }
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
 
 /* body {
@@ -40,6 +41,7 @@ body {
   justify-content: center;
 }
 
+.about,
 .task {
   border: 2px solid black;
   color: white;
@@ -166,4 +168,24 @@ body {
   color: rgb(218, 0, 0);
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
+}
+.about {
+  position: absolute;
+  right: 20vw;
+  top: 20vh;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+.theLink {
+  color: white;
+  text-decoration: none;
+  font-family: 'Changa', sans-serif;
+  font-size: 2em;
+}
+
+.aboutLink {
+  position: fixed;
+  top: 90vh;
+  right: 3vw;
+  color: white;
 }
