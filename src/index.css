@@ -108,9 +108,12 @@ body {
 }
 
 .tf {
-  border: 1px solid white;
-  /* width: 50vw;
-  height: 25vh; */
+  position: relative;
+  width: 50vw;
+  right: -20%;
+  border-top: 1px solid white;
+  border-bottom: 5px solid white;
+  border-radius: 10% 20%;
   padding: 1%;
   margin: 5%;
 }
