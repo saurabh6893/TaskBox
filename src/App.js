@@ -5,9 +5,11 @@ import Head from './Components/Head'
 import TaskList from './Components/TaskList'
 import Data from './DataBase/Data'
 import Stats from './Components/Stats'
-import TaskForm from './Components/TaskForm'
+import TaskForm from './Components/Pages/TaskForm'
+
 import About from './Components/Pages/About'
 import AboutLink from './Components/AboutLink'
+import TaskFormLink from './Components/TaskFormLink'
 
 function App() {
   const [task, setTask] = useState(Data)
@@ -31,15 +33,15 @@ function App() {
             element={
               <>
                 <Head />
-                <TaskForm handleAdd={addTask} />
                 <Stats task={task} />
                 <TaskList task={task} deleteBox={deleteBox} />
               </>
             }
           ></Route>
           <Route path='/about' element={<About />} />
+          <Route path='/add' element={<TaskForm handleAdd={addTask} />} />
         </Routes>
-
+        <TaskFormLink />
         <AboutLink />
       </div>
     </Router>

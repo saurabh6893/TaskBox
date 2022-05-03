@@ -192,3 +192,10 @@ body {
   right: 3vw;
   color: white;
 }
+
+.TaskFormLink {
+  position: fixed;
+  top: 90vh;
+  left: 3vw;
+  color: white;
+}

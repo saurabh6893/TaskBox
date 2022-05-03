@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import TheButton from './TheButton'
+import { Link } from 'react-router-dom'
+import TheButton from '../TheButton'
 
-function TaskForm({ handleAdd }) {
+const TaskForm = ({ handleAdd }) => {
   // useState Hooks
   const [title, setTitle] = useState('')
   const [range, setRange] = useState('')
@@ -29,9 +30,12 @@ function TaskForm({ handleAdd }) {
     setTitle(e.target.value)
     verifier()
   }
+  //
 
+  //
   const handleSubmit = (e) => {
     e.preventDefault()
+
     if (title.trim().length > 4 && details.trim().length > 10) {
       const newTask = {
         title,
@@ -92,6 +96,9 @@ function TaskForm({ handleAdd }) {
         </TheButton>
       </div>
       {msg && <div className='msg'>{msg}</div>}
+      <Link className='theLink' to='/'>
+        Back
+      </Link>
     </form>
   )
 }
