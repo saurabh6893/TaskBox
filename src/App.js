@@ -6,7 +6,7 @@ import TaskList from './Components/TaskList'
 import Data from './DataBase/Data'
 import Stats from './Components/Stats'
 import TaskForm from './Components/Pages/TaskForm'
-
+import { TaskProvider } from './Components/Context/TaskContext'
 import About from './Components/Pages/About'
 import AboutLink from './Components/AboutLink'
 import TaskFormLink from './Components/TaskFormLink'
@@ -24,27 +24,29 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className='app'>
-        <Routes>
-          <Route
-            exact
-            path='/'
-            element={
-              <>
-                <Head />
-                <Stats task={task} />
-                <TaskList task={task} deleteBox={deleteBox} />
-              </>
-            }
-          ></Route>
-          <Route path='/about' element={<About />} />
-          <Route path='/add' element={<TaskForm handleAdd={addTask} />} />
-        </Routes>
-        <TaskFormLink />
-        <AboutLink />
-      </div>
-    </Router>
+    <TaskProvider>
+      <Router>
+        <div className='app'>
+          <Routes>
+            <Route
+              exact
+              path='/'
+              element={
+                <>
+                  <Head />
+                  <Stats task={task} />
+                  <TaskList task={task} deleteBox={deleteBox} />
+                </>
+              }
+            ></Route>
+            <Route path='/about' element={<About />} />
+            <Route path='/add' element={<TaskForm handleAdd={addTask} />} />
+          </Routes>
+          <TaskFormLink />
+          <AboutLink />
+        </div>
+      </Router>
+    </TaskProvider>
   )
 }
 
