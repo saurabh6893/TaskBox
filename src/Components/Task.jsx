@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaTimes, FaPenSquare } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
 import { useContext } from 'react'
 import TaskContext from './Context/TaskContext'
 import Box from './Box'
 
 function Task({ t }) {
-  const { deleteBox, editTask } = useContext(TaskContext)
+  const { deleteBox } = useContext(TaskContext)
 
   return (
     <Box>
@@ -13,9 +13,7 @@ function Task({ t }) {
         <div className='hx'>
           <h3>Priority {t.range}</h3>
           <h2>{t.title}</h2>
-          <button className='edit' onClick={() => editTask(t)}>
-            <FaPenSquare color='red' />
-          </button>
+
           <button className='clx' onClick={() => deleteBox(t.id)}>
             <FaTimes />
           </button>

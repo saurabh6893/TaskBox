@@ -21,19 +21,8 @@ export const TaskProvider = ({ children }) => {
     setTask([newTask, ...task])
   }
 
-  const [TaskEdit, setTaskEdit] = useState({
-    item: {},
-    edit: false,
-  })
-
-  const editTask = (item) => {
-    setTaskEdit({
-      item,
-      edit: true,
-    })
-  }
   return (
-    <TaskContext.Provider value={{ task, deleteBox, addTask, editTask }}>
+    <TaskContext.Provider value={{ task, deleteBox, addTask }}>
       {children}
     </TaskContext.Provider>
   )

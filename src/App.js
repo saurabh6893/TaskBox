@@ -9,11 +9,6 @@ import AboutLink from './Components/AboutLink'
 import TaskFormLink from './Components/TaskFormLink'
 
 function App() {
-  // const addTask = (newTask) => {
-  //   newTask.id = uuidv4()
-  //   setTask([newTask, ...task])
-  // }
-
   return (
     <TaskProvider>
       <Router>
