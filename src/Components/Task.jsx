@@ -1,7 +1,12 @@
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
+import { useContext } from 'react'
+import TaskContext from './Context/TaskContext'
 import Box from './Box'
-function Task({ t, deleteBox }) {
+
+function Task({ t }) {
+  const { deleteBox } = useContext(TaskContext)
+
   return (
     <Box>
       <div className='task'>

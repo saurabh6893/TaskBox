@@ -1,9 +1,6 @@
-import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Head from './Components/Head'
 import TaskList from './Components/TaskList'
-import Data from './DataBase/Data'
 import Stats from './Components/Stats'
 import TaskForm from './Components/Pages/TaskForm'
 import { TaskProvider } from './Components/Context/TaskContext'
@@ -12,16 +9,10 @@ import AboutLink from './Components/AboutLink'
 import TaskFormLink from './Components/TaskFormLink'
 
 function App() {
-  const [task, setTask] = useState(Data)
-
-  const deleteBox = (id) => {
-    setTask(task.filter((item) => item.id !== id))
-  }
-
-  const addTask = (newTask) => {
-    newTask.id = uuidv4()
-    setTask([newTask, ...task])
-  }
+  // const addTask = (newTask) => {
+  //   newTask.id = uuidv4()
+  //   setTask([newTask, ...task])
+  // }
 
   return (
     <TaskProvider>
@@ -34,13 +25,13 @@ function App() {
               element={
                 <>
                   <Head />
-                  <Stats task={task} />
-                  <TaskList task={task} deleteBox={deleteBox} />
+                  <Stats />
+                  <TaskList />
                 </>
               }
             ></Route>
             <Route path='/about' element={<About />} />
-            <Route path='/add' element={<TaskForm handleAdd={addTask} />} />
+            <Route path='/add' element={<TaskForm />} />
           </Routes>
           <TaskFormLink />
           <AboutLink />
@@ -51,3 +42,6 @@ function App() {
 }
 
 export default App
+
+// move to line 40 if fail
+//  handleAdd={addTask}

@@ -1,15 +1,17 @@
 import React from 'react'
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import TheButton from '../TheButton'
+import TaskContext from '../Context/TaskContext'
+import { useState, useContext } from 'react'
 
-const TaskForm = ({ handleAdd }) => {
+const TaskForm = () => {
   // useState Hooks
   const [title, setTitle] = useState('')
   const [range, setRange] = useState('')
   const [details, setDetails] = useState('')
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [msg, setMsg] = useState('')
+  const { addTask } = useContext(TaskContext)
   const [version, setVersion] = useState('incomplete')
 
   function verifier() {
@@ -42,7 +44,7 @@ const TaskForm = ({ handleAdd }) => {
         range,
         details,
       }
-      handleAdd(newTask)
+      addTask(newTask)
       setTitle('')
       setRange(1)
       setDetails('')
