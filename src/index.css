@@ -72,13 +72,17 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 50%;
+  justify-content: space-around;
 }
 
 .hx > * {
-  margin-right: 40%;
-  margin-left: 40%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.hx h2 {
+  font-size: 50px;
+  margin-right: 25%;
 }
 
 .taskList,
@@ -198,4 +202,11 @@ body {
   top: 90vh;
   left: 3vw;
   color: white;
+}
+
+.clx,
+.edit {
+  font-size: 10px;
+  position: relative;
+  transform: translateX(10vw);
 }
