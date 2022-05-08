@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 /* body {
   display: flex;
   justify-content: space-around;
@@ -46,9 +47,11 @@ body {
   border: 2px solid black;
   border-radius: 2em;
   color: white;
+  width: 40vw;
+  height: auto;
   background-color: #537895;
   background-image: linear-gradient(280deg, #005d3e 0%, #09203f 74%);
-  padding: 1% 1% 1% 1%;
+  padding: 1% 2.5% 1% 2.5%;
   margin: 1% 0 1% 0;
   display: flex;
   flex-direction: column;
@@ -65,24 +68,42 @@ body {
   min-width: 30vw;
   max-width: 70vw;
   /* //test// */
-  border: 2px solid red;
   /* //test// */
   justify-content: space-between;
-  padding: 1%;
+  padding: 1% 10%;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.hx h2 {
+  font-family: 'Staatliches', cursive;
+  text-decoration: underline;
+}
+.p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Monoton', cursive;
+}
+
+.p.red {
+  color: red;
 }
 
 .taskList,
 #Nt {
   color: white;
-  font-size: 20px;
 }
 
 .sts {
   display: flex;
+  /* border: 2px solid red; */
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   color: White;
+  background-color: #052e5c22;
   text-transform: capitalize;
   margin-bottom: 2%;
 }
@@ -113,6 +134,7 @@ body {
   align-items: center;
   margin-bottom: 5%;
   justify-content: space-between;
+  /* border: 10px crimson solid; */
 }
 
 .up > * {
