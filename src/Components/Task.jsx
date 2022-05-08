@@ -13,7 +13,6 @@ function Task({ t }) {
         <div className='hx'>
           <h3>Priority {t.range}</h3>
           <h2>{t.title}</h2>
-
           <button className='clx' onClick={() => deleteBox(t.id)}>
             <FaTimes />
           </button>
