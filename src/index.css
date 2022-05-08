@@ -123,6 +123,14 @@ body {
   font-size: 20px;
 }
 
+.clx:hover {
+  background-color: rgb(74, 1, 1);
+  cursor: pointer;
+  color: white;
+  border: none;
+  transform: scale(1.25);
+}
+
 .tf {
   position: relative;
   width: 50vw;
