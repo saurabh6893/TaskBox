@@ -42,7 +42,6 @@ body {
   justify-content: center;
 }
 
-.about,
 .task {
   border: 2px solid black;
   border-radius: 2em;
@@ -66,6 +65,21 @@ body {
   transform: translateY(-10%) scale(1.025);
 }
 
+.about {
+  border: 2px solid black;
+  border-radius: 2em;
+  color: white;
+  width: 50vw;
+  background-color: #537895;
+  background-image: linear-gradient(280deg, #005d3e 0%, #09203f 74%);
+  padding: 1% 2.5% 1% 2.5%;
+  margin: 1% 0 1% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
 .hx {
   display: flex;
   flex-direction: row;
@@ -135,11 +149,17 @@ body {
   position: relative;
   width: 50vw;
   right: -20%;
-  border-top: 1px solid white;
-  border-bottom: 5px solid white;
-  border-radius: 10% 20%;
+  border: 5px solid white;
+  background-image: linear-gradient(180deg, #3f0d12 10%, #a71d31 94%);
+
   padding: 1%;
   margin: 5%;
+}
+.tf:hover {
+  background-image: linear-gradient(180deg, #3f0d12 10%, #a71d31 74%);
+  box-shadow: rgb(71, 71, 71) 0px 20px 50px 10px;
+  border-right: 5px solid grey;
+  border-left: 5px solid grey;
 }
 .up {
   display: flex;
@@ -153,6 +173,10 @@ body {
 .up > * {
   margin-right: 5vw;
   margin-left: 5vw;
+}
+.tf h2 {
+  font-family: serif;
+  text-transform: capitalize;
 }
 
 .down {

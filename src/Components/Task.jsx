@@ -6,7 +6,6 @@ import Box from './Box'
 
 function Task({ t }) {
   const { deleteBox } = useContext(TaskContext)
-
   return (
     <Box>
       <div className='task'>
@@ -20,7 +19,7 @@ function Task({ t }) {
             <FaTimes />
           </button>
         </div>
-        <p>{t.details}</p>
+        <p id='dxx'>{t.details}</p>
       </div>
     </Box>
   )
