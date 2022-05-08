@@ -36,9 +36,11 @@ export const TaskProvider = ({ children }) => {
   // }
 
   const deleteBox = async (id) => {
-    await fetch(`/task/${id}`, { method: 'DELETE' })
+    if (window.confirm('Are u sure u want to delete this Task')) {
+      await fetch(`/task/${id}`, { method: 'DELETE' })
 
-    setTask(task.filter((item) => item.id !== id))
+      setTask(task.filter((item) => item.id !== id))
+    }
   }
 
   return (
