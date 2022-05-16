@@ -1,22 +1,16 @@
 {
   "task": [
     {
-      "title": "Delta is one",
+      "title": "Alpha",
       "range": 5,
-      "details": "alpha beta charlie",
+      "details": "task alpha with hight priority",
       "id": 1
     },
     {
-      "title": "texasOne",
-      "range": 3,
-      "details": "not that important",
+      "title": "Test task",
+      "range": "",
+      "details": "Deltax alpgas sasmdlnsdcjk dfvjk dfjvdf vmfv;dfvdv",
       "id": 2
-    },
-    {
-      "title": "alpha turbox",
-      "range": 4,
-      "details": "delta has been spelled as d e l t a",
-      "id": 3
     }
   ]
 }

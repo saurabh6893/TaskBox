@@ -62,7 +62,8 @@ const TaskForm = () => {
 
   return (
     <form className='tf' onSubmit={handleSubmit}>
-      <h2>Set a new task</h2>
+      <h2 className='h2nt'>New Task</h2>
+
       <div className='inputBox'>
         <div className='up'>
           <input

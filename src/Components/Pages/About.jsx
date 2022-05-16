@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 function About() {
   return (
     <div className='about'>
-      <h1>About this Project</h1>
-      <p>this is a web app made to understand better about react.js</p>
+      <h2 className='h2nt'>TaskBox</h2>
+      <p>
+        This is a WebApp made to understand better about <span>React.js</span>
+      </p>
       <p>version:1.0.0</p>
       <p>
         <Link className='theLink' to='/'>
