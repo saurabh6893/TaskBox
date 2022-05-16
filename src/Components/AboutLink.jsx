@@ -6,7 +6,7 @@ function AboutLink() {
   return (
     <div className='aboutLink'>
       <Link to='./about'>
-        <FaReceipt size={40} />
+        <FaReceipt size={50} />
       </Link>
     </div>
   )

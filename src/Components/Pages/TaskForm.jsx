@@ -95,7 +95,8 @@ const TaskForm = () => {
           isDisabled={btnDisabled}
           version={version}
         >
-          Add
+          <span>Add</span>
+          <i></i>
         </TheButton>
       </div>
       {msg && <div className='msg'>{msg}</div>}

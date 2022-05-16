@@ -6,7 +6,7 @@ function TaskFormLink() {
   return (
     <div className='TaskFormLink'>
       <Link to='./add'>
-        <FaPlus size={40} />
+        <FaPlus size={50} />
       </Link>
     </div>
   )
