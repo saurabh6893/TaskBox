@@ -11,10 +11,10 @@ function Task({ t }) {
       <div className='task'>
         <div className='hx'>
           <div className='p'>
-            <h4>Priority :</h4>
+            <h4>Priority: </h4>
             <h2>{t.range}</h2>
           </div>
-          <h2>{t.title}</h2>
+          <h2 className='h2nt'>{t.title}</h2>
           <button className='clx' onClick={() => deleteBox(t.id)}>
             <FaTimes />
           </button>

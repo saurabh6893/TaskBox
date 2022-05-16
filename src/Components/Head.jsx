@@ -4,7 +4,7 @@ function Head() {
   return (
     <div className='head'>
       <p>hello Saurabh</p>
-      <h1 className='h2nt'>Task-Box</h1>
+      <h1 className='HDX'>Task-Box</h1>
       <p>pending tasks are x</p>
     </div>
   )

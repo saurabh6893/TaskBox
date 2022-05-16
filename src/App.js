@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Head from './Components/Head'
 import TaskList from './Components/TaskList'
-import Stats from './Components/Stats'
 import TaskForm from './Components/Pages/TaskForm'
 import { TaskProvider } from './Components/Context/TaskContext'
 import About from './Components/Pages/About'
@@ -20,7 +19,7 @@ function App() {
               element={
                 <>
                   <Head />
-                  <Stats />
+
                   <TaskList />
                 </>
               }
