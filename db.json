@@ -1,3 +1,22 @@
 {
-  "task": []
+  "task": [
+    {
+      "title": "Groceries",
+      "range": 4,
+      "details": "Bring eggs milk and bread",
+      "id": 1
+    },
+    {
+      "title": "Fix the issue",
+      "range": 5,
+      "details": "fix the media query on the previous project",
+      "id": 2
+    },
+    {
+      "title": "Test task",
+      "range": 2,
+      "details": "Hello this is a low priority task lets go",
+      "id": 5
+    }
+  ]
 }

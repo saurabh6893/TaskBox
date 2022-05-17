@@ -13,5 +13,3 @@ function AboutLink() {
 }
 
 export default AboutLink
-
-/* <Link to={{ pathname: './about', search: '?sort=name', hash: 'hello' }}> */

@@ -15,6 +15,7 @@ function Task({ t }) {
             <h2>{t.range}</h2>
           </div>
           <h2 className='h2nt'>{t.title}</h2>
+
           <button className='clx' onClick={() => deleteBox(t.id)}>
             <FaTimes />
           </button>
