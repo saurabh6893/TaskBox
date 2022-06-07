@@ -1,22 +1,22 @@
 {
   "task": [
     {
-      "title": "Groceries",
-      "range": 4,
-      "details": "Bring eggs milk and bread",
-      "id": 1
-    },
-    {
-      "title": "Fix the issue",
-      "range": 5,
-      "details": "fix the media query on the previous project",
-      "id": 2
-    },
-    {
       "title": "Test task",
       "range": 2,
       "details": "Hello this is a low priority task lets go",
       "id": 5
+    },
+    {
+      "title": "Groceries",
+      "range": 5,
+      "details": "Eggs and milk",
+      "id": 6
+    },
+    {
+      "title": "check on Asus",
+      "range": 5,
+      "details": "check on warranty expiry and get repairs done",
+      "id": 7
     }
   ]
 }
